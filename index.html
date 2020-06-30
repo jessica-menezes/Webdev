@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+    <p>How many fingers am I holding?</p>
+
+    <input id="answer"/>
+    <button id="mybutton">Submit</button>
+
+
+
+    <script type="text/javascript">
+
+    
+
+        document.getElementById("mybutton").onclick=function(){
+            var x=Math.random();
+
+            //Math.pow(5,2) finds 5^3 = 25
+            //Marh.random() finds a random number between 0-1
+
+            x = 6 * x;
+            x=Math.floor(x)  //gets the number and makes it a whole nunber. rounds x to the nearst whole number
+            input = document.getElementById("answer").value;
+            if(x == input){
+                alert("Correct");
+            }
+            else{
+                alert("Dumb no wrong, My number was " + x);
+            }
+
+
+        }
+    </script>
+ 
+</body>
+</html>
