@@ -1,0 +1,32 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+    <p>What is in my Array?</p>
+    <p id = arrayString></p>
+
+    <script type="text/javascript">
+
+        var arrayString ="";
+        var myArray = new Array();
+        myArray = ["Pizza", "Chocolate", "Chips"];
+        for (var i = 0; i < myArray.length; i++){
+            arrayString = arrayString + myArray[i] + " ";
+        }
+
+        document.getElementById("arrayString").innerHTML=arrayString;
+    </script>
+ 
+
+</body>
+</html>
