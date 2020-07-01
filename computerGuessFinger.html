@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+</head>
+
+<body>
+
+    <p>How many fingers are you holding up?</p>
+    <input id = "myNumber"></p>
+
+    <button id="guess">Guess!</button>
+
+    <script type="text/javascript">
+      document.getElementById("guess").onclick=function(){
+        var gotIt = false;
+        var guesses = 1;
+        var x;
+
+        while (gotIt == false) {
+          var number = document.getElementById("myNumber").value;
+          x = Math.random();
+          x = 6 * x;
+          x = Math.floor(x);
+
+          if (number == x){
+              gotIt = true;
+          } else {  
+              guesses++
+          }
+        }
+        // so is it working ?
+        //ya can u try
+        alert("Got it! it was " + x + " it took me " + guesses + " times.");
+      } 
+    </script>
+ 
+
+</body>
+</html>
